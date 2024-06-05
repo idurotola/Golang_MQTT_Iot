@@ -1,4 +1,6 @@
 In the rapidly evolving landscape of the Internet of Things (IoT), efficient communication between a multitude of devices is paramount. MQTT (Message Queuing Telemetry Transport) stands out as a lightweight, publish-subscribe messaging protocol designed specifically for machine-to-machine communication over bandwidth-limited or resource-constrained networks. This experiment discusses the advantages of using MQTT in IoT applications, highlighting its efficiency, scalability, low power consumption, reliability, simplicity, and flexibility. Furthermore, it explores the benefits of implementing MQTT with Golang, particularly its superior concurrency handling and ease of integration, making it an excellent choice for high-volume IoT environments. A practical application in smart agriculture is illustrated, demonstrating how a Golang-based MQTT client can optimize resource usage and enhance crop yield through real-time data analysis and system automation. The potential of MQTT and Golang in developing Digital Twins is also considered, showcasing their versatility in advanced IoT solutions.
 
 TODO:
-Keys and credentials should not be hardcoded into code, better to use os.GETENV() for getting environment variables.
+1. Keys and credentials should not be hardcoded into code, better to use os.GETENV() for getting environment variables.
+
+2. Keep Subscriber within its on package and rename to main.go, do the same for Publisher.
